@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 145 93% 33%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 44 94% 58%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 44 100% 94%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 44 94% 58%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 145 30% 85%;
+    --input: 145 30% 85%;
+    --ring: 145 93% 33%;
+    --radius: 0.75rem;
+    
+    /* Brand Colors */
+    --nim-green: #06a34c;
+    --nim-green-dark: #048a3d;
+    --nim-yellow: #f9c02d;
+    --nim-yellow-light: #fff8e1;
+    --nim-white: #ffffff;
+    --nim-black: #000000;
+    --nim-gray: #666666;
+    --nim-gray-light: #f5f5f5;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#06a34c] text-white px-6 py-3 rounded-full font-semibold 
+           transition-all duration-300 hover:bg-[#048a3d] hover:shadow-lg
+           active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#f9c02d] text-black px-6 py-3 rounded-full font-semibold 
+           transition-all duration-300 hover:bg-[#e5b020] hover:shadow-lg
+           active:scale-95;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-[#06a34c] text-[#06a34c] px-6 py-3 rounded-full font-semibold 
+           transition-all duration-300 hover:bg-[#06a34c] hover:text-white
+           active:scale-95;
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#06a34c] to-[#048a3d] bg-clip-text text-transparent;
+  }
+  
+  .bg-pattern {
+    background-image: radial-gradient(circle at 2px 2px, rgba(6, 163, 76, 0.1) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float 4s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s ease-in-out infinite;
+  }
+  
+  .animate-bounce-slow {
+    animation: bounce 2s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #06a34c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #048a3d;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(6, 163, 76, 0.2);
+  color: #000;
+}
