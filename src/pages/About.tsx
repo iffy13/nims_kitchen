@@ -94,7 +94,7 @@ export default function About() {
             <div className="bg-[#f9c02d] rounded-3xl p-8 lg:p-12 text-black">
               <h2 className="text-2xl lg:text-3xl font-bold mb-4">Our Vision</h2>
               <p className="text-black/80 leading-relaxed">
-                At Nim's Kitchen, our mission is to prepare and serve flavorful, well-crafted meals—especially authentic Ofada rice—using quality ingredients, excellent hygiene, and genuine passion for cooking, while 
+                At Nim's Kitchen, our mission is to prepare and serve flavorful, well-crafted meals—especially authentic Ofada rice—using quality ingredients, excellent hygiene, and genuine passion for cooking, while creating a welcoming experience for every customer. 
               </p>
             </div>
           </div>
