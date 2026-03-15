@@ -171,7 +171,7 @@ export default function About() {
                 className="rounded-2xl shadow-lg w-full h-48 object-cover mt-8"
               />
               <img
-                src="/images/protein-suya.png"
+                src="/images/bev-coke.png"
                 alt="Suya"
                 className="rounded-2xl shadow-lg w-full h-48 object-cover"
               />
@@ -190,9 +190,8 @@ export default function About() {
         <div className="section-padding">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { number: '500+', label: 'Happy Customers' },
-              { number: '1000+', label: 'Orders Delivered' },
-              { number: '2+', label: 'Years Experience' },
+              { number: '50+', label: 'Happy Customers' },
+              { number: '50+', label: 'Orders Delivered' 
               { number: '4.9', label: 'Average Rating' },
             ].map((stat, index) => (
               <div key={index} className="text-center text-white">
