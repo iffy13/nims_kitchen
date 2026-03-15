@@ -88,17 +88,13 @@ export default function About() {
             <div className="bg-[#06a34c] rounded-3xl p-8 lg:p-12 text-white">
               <h2 className="text-2xl lg:text-3xl font-bold mb-4">Our Mission</h2>
               <p className="text-white/90 leading-relaxed">
-                To deliver the most authentic and delicious Ofada rice experience to every customer, 
-                using traditional recipes, fresh ingredients, and a whole lot of love. We aim to 
-                preserve Nigerian culinary heritage while providing exceptional service.
+                To become a trusted and widely recognized food brand with multiple branches, known for serving delicious, high-quality meals that bring people together and make great food accessible to everyone.
               </p>
             </div>
             <div className="bg-[#f9c02d] rounded-3xl p-8 lg:p-12 text-black">
               <h2 className="text-2xl lg:text-3xl font-bold mb-4">Our Vision</h2>
               <p className="text-black/80 leading-relaxed">
-                To become the most trusted and loved Ofada rice brand in Nigeria, known for our 
-                commitment to quality, authenticity, and customer satisfaction. We envision a 
-                future where every Nigerian can enjoy authentic Ofada rice wherever they are.
+                At Nim's Kitchen, our mission is to prepare and serve flavorful, well-crafted meals—especially authentic Ofada rice—using quality ingredients, excellent hygiene, and genuine passion for cooking, while 
               </p>
             </div>
           </div>
